@@ -23,7 +23,33 @@
       flex-wrap: wrap;
       gap: 10px;
     }
-    </style>
+    .div-form{
+      background-color: #FDA4C4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #user-infor {
+      padding-top: 10px;
+      background-color: #FDA4C4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #user-infor p{
+      font-weight: bold;
+    }
+    .btn-f{
+      background-color: #FDE2CF;
+      border: 2px solid #7ED6E6;
+      border-radius: 25px;
+      margin-top: 6px;
+    }
+    .btn-f:hover{
+      background-color: white;
+      transform: translateY(4px);
+    }
+</style>
   </head>
   <body>
 
@@ -58,6 +84,32 @@ height: 600px;">
 </div>
 </div>
 <!-- Hero -->
+<div class="div-form">
+<form id="form">
+  <label for="name">Your Name</label><br>
+  <input type="text" id="name" placeholder="your name">
+<br><br>
+  <label for="age">Your Age</label><br>
+  <input type="number" id="age" placeholder="your age">
+  <br><br>
+  <label for="gender">Your Gender</label><br>
+  <input type="text" id="gender" placeholder="your gender">
+<br><br>
+  <label for="order">order type</label><br>
+  <input type="text" id="order" placeholder="order type">
+<br><br>
+<label for="">drinks</label><br>
+<label for="hot">hot</label>
+<input type="radio" id="hot" class="check" value="hot" name="drinks">
+<label for="cold">cold</label>
+<input type="radio" id="cold" class="check" value="cold" name="drinks">
+<br>
+<button id="submit" class="btn-f">submit</button>  
+<input type="reset" class="btn-f">
+</form>
+</div>
+<div id="user-infor"></div>
+
 <div class="cards">
 <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="doun.jpg" alt="Card image cap">
